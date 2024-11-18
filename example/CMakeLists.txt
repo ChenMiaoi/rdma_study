@@ -1,0 +1,5 @@
+function(add_example)
+    foreach(module LISTS IN ARGN)
+        add_subdirectory(${module})
+    endforeach()    
+endfunction(add_example)
